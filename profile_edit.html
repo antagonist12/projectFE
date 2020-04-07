@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Edit</title>
+
+    <!-- Javascript Bootstrap External -->
+    <script src="assets/external/js/jquery.js"></script>
+    <script src="assets/external/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/external/js/highcharts.js"></script>
+    <script src="assets/external/js/highcharts-exporting.js"></script>
+    <script src="assets/external/js/highcharts-export-data.js"></script>
+    <script src="assets/external/js/highcharts-accessibility.js"></script> -->
+
+    <!-- Javascript Library Internal -->
+    <script src="assets/internal/js/button_action.js"></script>
+    <script src="assets/internal/js/modal.js"></script>
+
+    <!-- Css Bootstrap External-->
+    <link rel="stylesheet" type="text/css" href="assets/external/css/bootstrap.min.css">
+
+    <!-- CSS Library Internal -->
+    <link rel="stylesheet" type="text/css" href="assets/internal/css/form.css">
+    <link rel="stylesheet" type="text/css" href="assets/internal/css/content.css">
+    <link rel="stylesheet" type="text/css" href="assets/internal/css/modal.css">
+    <link rel="stylesheet" type="text/css" href="assets/internal/css/button_action.css">
+
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <div class="header-container">
+        <div class="rounded c-base">
+            My Account
+        </div>
+        <div class="rounded c-trans">
+            <div class="account-img rounded">
+                <img src="assets/image/profile_photo/avatar cowo.png" alt="avatar cowo.png">
+            </div>
+            <label class="account-name">Aditya / Admin Pusat</label>
+        </div>
+
+        <a href="profile_dashboard.html" class="pull-right rounded c-danger">Close</a>
+
+        <div class="c-base rounded pull-right">
+            <div class="account-img rounded c-trans label pull-right">
+                <label class="account-init desc-clr">2</label>
+            </div>
+            <label class="account-name">Notifikasi</label>
+        </div>
+
+        <div class="rounded c-base pull-right">
+            <div class="account-img rounded c-trans pull-right">
+                <label class="account-init">Telegram</label>
+                <img src="assets/image/asset/telegram.jpg">
+            </div>
+            <label class="account-name">Telegram</label>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="content-container">
+        <div class="col col-content pad-sm">
+            <h4 style="margin-bottom: 15px;">EDIT PROFILE</h4>
+            <div class="flex f-float-round">
+                <div class="f-col-4 pad-lg">
+                    <div class="image-round">
+                        <img src="assets/image/profile_photo/avatar cowo.png" alt="avatar cowo.png">
+                    </div>
+                </div>
+                <div class="f-col" style="padding-top: 50px;">
+                    <div class="flex">
+                        <div class="f-col">
+                            <h5 class="bold">SILAHKAN UPLOAD FOTO ANDA</h5>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="flex">
+                            <div class="f-col-7">
+                                <div class="label">
+                                    <input type="file" class="form-control" id="pic" name="pic" style="display:none"
+                                        onchange="document.getElementById('filename').value=this.value">
+                                    <input type="text" class="form-control f-bordered rounded" id="filename"
+                                        autocomplete="off" placeholder="Pilih File Foto Anda"
+                                        onclick="document.getElementById('pic').click()">
+                                </div>
+                            </div>
+                            <div class="f-col-4">
+                                <input type="submit" class="btn c-success rounded" value="Upload">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <form>
+                <div class="flex" style="margin-left: 1px; margin-top: 5px;">
+                    <div class="f-col">
+                        <div class="label">
+                            <div class="title">Username : </div>
+                            <input type="text" disabled class="form-control desc" name="username" id="username"
+                                value="aditya">
+                        </div>
+                        <div class="label">
+                            <div class="label">Password : </div>
+                            <input type="password" class="form-control desc" name="password" name="password"
+                                id="password" value="123456">
+                        </div>
+                        <div class="label">
+                            <div class="label">Re-Password : </div>
+                            <input type="password" class="form-control desc" name="password_2" name="password_2"
+                                id="password_2" value="123456">
+                        </div>
+                        <div class="label">
+                            <div class="label">Email : </div>
+                            <input type="email" class="form-control desc" name="email" id="email"
+                                value="aditya@gmail.com">
+                        </div>
+                        <div class="label">
+                            <div class="label">No. Telphone : </div>
+                            <input type="text" class="form-control desc" name="phone" id="phone" value="08190831xxx">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button class='btn btn-success simpan-btn' data-link="profile_dashboard.html">SIMPAN</button>
+        </div>
+
+
+        <div class="modal-item"></div>
+
+        <!-- side Menu -->
+        <div class="col col-menu">
+            <div class="menu-logo" style="height: 80px;">
+                <img src="assets/image/asset/app-logo.png">
+            </div>
+            <div class="menu-button">
+                <a href="profile_dashboard.html" class="menu-item">
+                    <div class="menu-icon">
+                        <img src="assets/image/materiDesign/Dashboard Blue.png">
+                    </div>
+                    <div class="menu-text">
+                        <div class="menu-title">DASHBOARD</div>
+                        <div class="menu-desc">Merupakan preview dari aktifitas yang dilakukan masing-masing unit
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="menu-button">
+                <a href="profile_edit.html" class="menu-item active">
+                    <div class="menu-icon">
+                        <img src="assets/image/materiDesign/Pengguna Green.png">
+                    </div>
+                    <div class="menu-text">
+                        <div class="menu-title">UBAH PROFIL</div>
+                        <div class="menu-desc">Merubah data profil pengguna</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-container">
+        <label>Nine Cloud 2019</label>
+    </div>
+</body>
+<script src="assets/internal/js/editmodal.js"></script>
+<script src="assets/internal/js/general.js"></script>
+
+</html>

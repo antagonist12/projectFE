@@ -1,0 +1,33 @@
+.loading{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	background-color: #00000080;
+	 display: none; 
+	-webkit-animation-name: animatefade;
+	-webkit-animation-duration: 0.4s;
+	animation-duration: 0.4s;
+}
+.loading img{
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	-webkit-animation-name: animatefade;
+	-webkit-animation-duration: 0.4s;
+	animation-duration: 0.4s;
+}
+@-webkit-keyframes animatefade{
+	from {opacity: 0}
+	to {opacity: 1}
+}
+@keyframes animatefade {
+	from {opacity: 0}
+	to {opacity: 1}
+}

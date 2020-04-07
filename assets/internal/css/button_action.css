@@ -1,0 +1,30 @@
+.btn-container > .btn-action{
+  font-size: 1rem;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.btn-container > .action-detail{
+  background: #57980a;
+}
+.btn-container > .action-detail:hover{
+  background: #4f8c07;
+}
+
+.btn-container > .action-edit{
+  background: #f4d220;
+  color: #1d1d1d;
+}
+.btn-container > .action-edit:hover{
+  background: #e7c61c;
+}
+
+.btn-container > .action-delete{
+  background: #d63636;
+}
+.btn-container > .action-delete:hover{
+  background: #c22c2c;
+}
